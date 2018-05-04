@@ -16,7 +16,7 @@ print(_output)
 pen = [x.strip("id=") for x in _output[0].split() if "id" in x][0]
 pressure = [x.strip("id=") for x in _output[1].split() if "id" in x][0]
 try:
-    extra=[x.strip("id=") for x in _output[2].split() if "id" in x][0]
+    extra = [x.strip("id=") for x in _output[2].split() if "id" in x][0]
     print('Three pens')
 except:
     print('only two Pens')
